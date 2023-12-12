@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Example</title>
+  <link rel="stylesheet" href="test_1206.css">
+</head>
+
+<body>
+
+  <button id="show">Show Modal</button>
+
+  <div id="overlayModal" class="overlay">
+    <div id="modal" class="modal">
+      <h2>請輸入您的暱稱：</h2>
+      <form action="nickname1.jsp" id="nicknameForm">
+        <input type="text" id="nickname" name="Name" required>
+        <br>
+        <input type="submit" value="送出">
+        <button id="closeModal">取消</button>
+      </form>
+    </div>
+  </div>
+
+  <button id="Q1">Show Question</button>
+
+  <div id="overlayQuestion" class="overlay">
+    <div class="modal">
+      <p>1.王船醮舉辦多是在台灣哪個地區？</p>
+
+      <form class="question">
+        <input type="text" id="Q1_" name="Name" required>
+        <br>
+        <button type="button" onclick="checkAnswer('A')">A</button>
+        <button type="button" onclick="checkAnswer('B')">B</button>
+        <button type="button" onclick="checkAnswer('C')">C</button>
+        <button type="button" onclick="checkAnswer('D')">D</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <script src="test_1206.js"></script>
+
+</body>
+
+</html>
